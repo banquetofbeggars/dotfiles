@@ -1,4 +1,9 @@
+syntax enable
 set number
 set shiftwidth=4
 set tabstop=4
 set expandtab
+set hlsearch
+set foldmethod=syntax
+set foldcolumn=4
+set hidden
