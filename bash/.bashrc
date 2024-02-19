@@ -1,4 +1,4 @@
-alias ls='ls -la --color'
+alias ls='ls -lA --color'
 alias grep='grep -n --color'
 
 function set_python {

@@ -1,0 +1,16 @@
+#!/bin/bash
+
+echo "Performing first time setup of dotfiles."
+stow -v &> /dev/null
+if [[ $? == 127 ]]; then
+    echo "stow must be installed."
+    exit 127
+fi
+
+packs=($(\ls -d */))
+for i in "${packs[@]}"
+do
+    echo "stowing $i"
+    stow -v $i
+done
+
